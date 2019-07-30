@@ -16,20 +16,20 @@ console.log(fadeUp.length);
 addEventListener("scroll", () => {
   fadeDown.forEach(elem => {
     if (isInViewport(elem)) {
-      elem.classList.add("animated", "fadeInDown", "slow");
+      elem.classList.add("animated", "fadeInDown", "fast");
       elem.style.visibility = "visible";
     }
 
     if (elem === document.querySelector(".section-title-2")) {
       let serviciosTipos = document.querySelector(".servicios-tipos");
-      serviciosTipos.classList.add("animated", "fadeInUp", "slower");
+      serviciosTipos.classList.add("animated", "fadeInUp", "fast");
       serviciosTipos.style.visibility = "visible";
     }
   });
 
   fadeUp.forEach(elem => {
     if (isInViewport(elem)) {
-      elem.classList.add("animated", "fadeInUp", "slow");
+      elem.classList.add("animated", "fadeInUp", "fast");
       elem.style.visibility = "visible";
     }
   });
