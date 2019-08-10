@@ -150,49 +150,6 @@ header {
   font-size: 13px;
 }
 
-/* Nosotros -------------------------------------------------------- */
-
-#nosotros {
-  background-color: #141414;
-  padding: 100px 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nosotros-content {
-  max-width: 740px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-title {
-  color: white;
-  font-size: 25px;
-  font-weight: 300;
-  font-family: "DM Serif Text";
-  font-style: oblique;
-  margin-bottom: 25px;
-  visibility: hidden;
-}
-
-.title-accent {
-  color: #0044ff;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-}
-
-.nosotros-copy {
-  text-align: center;
-  margin: 0 20px;
-  color: #999797;
-  visibility: hidden;
-}
-
 /* Quienes Somos ----------------------------------------------------- */
 
 #quienes-somos {
@@ -210,6 +167,24 @@ header {
 .section-text {
   font-size: 12px;
   line-height: 24px;
+}
+
+/* Nuestros Clientes ------------------------------------------------- */
+
+#nuestros-clientes {
+  padding: 55px 0 35px 0;
+}
+
+.clientes-logos {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cliente-logo {
+  width: initial;
+  margin: 0 20px 30px 20px;
 }
 
 /* Servicios --------------------------------------------------------- */
