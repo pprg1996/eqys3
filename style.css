@@ -8,7 +8,7 @@ body {
   font-size: 15px;
   line-height: 1.8;
   font-weight: 300;
-  color: gray;
+  /* color: gray; */
   overflow-x: hidden;
 }
 
@@ -25,38 +25,38 @@ img {
   color: #ce9c6b;
 }
 
-.grafico {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+.barra {
+  max-width: 190px;
+  height: 2px;
+  margin: auto;
+  background-color: #686868;
+  position: relative;
+  margin-bottom: 40px;
 }
 
-.horz-line {
-  height: 1px;
-  width: 40px;
-  border-top: 1px solid #52361b;
-  margin: 0 7px;
-}
-
-.square {
-  width: 7px;
-  height: 7px;
-  transform: rotateZ(45deg);
-  background-color: #ce9c6b;
-}
-
-.big {
+.circulo {
   width: 10px;
   height: 10px;
-  margin: 0 5px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 100%;
+  position: absolute;
+  left: calc(50% - 5px);
+  top: calc(50% - 5px);
 }
 
-.container {
+.old-container {
   max-width: 1200px;
   padding: 0 50px;
   margin: auto;
   height: 100%;
   display: flex;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .fade-up,
@@ -118,6 +118,7 @@ header {
   background-image: url("./assets/img/camiones-aerea.jpg");
   background-size: cover;
   background-attachment: fixed;
+  margin-bottom: 80px;
 }
 
 .home-content {
@@ -190,6 +191,25 @@ header {
   margin: 0 20px;
   color: #999797;
   visibility: hidden;
+}
+
+/* Quienes Somos ----------------------------------------------------- */
+
+#quienes-somos {
+  background-color: #ededed;
+  padding: 20px 0 50px 0;
+}
+
+.section-header {
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-text {
+  font-size: 12px;
+  line-height: 24px;
 }
 
 /* Servicios --------------------------------------------------------- */
