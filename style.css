@@ -118,7 +118,7 @@ header {
   background-image: url("./assets/img/camiones-aerea.jpg");
   background-size: cover;
   background-attachment: fixed;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .home-content {
@@ -191,6 +191,7 @@ header {
 
 #servicios {
   padding: 30px 0 50px 0;
+  background-color: #ededed;
 }
 
 .section-title-2 {
@@ -204,21 +205,108 @@ header {
   font-family: "DM Serif Text";
   color: black;
   text-align: center;
-  font-size: 24px;
+  font-size: 14px;
   margin-bottom: 45px;
 }
 
-.servicios-tipos {
+.servicios-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: white;
+  font-family: "Titillium Web";
+}
+
+.servicio-block {
+  width: 30%;
+  margin: 5px 5px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: black;
+  transition: all 0.5 ease-in-out;
+}
+
+.servicio-block:hover .overlay {
+  opacity: 0.6;
+}
+
+.servicio-block:hover .servicio-descripcion {
+  max-height: 400px;
+  padding: 14px 10px;
+}
+
+.servicio-img-container {
+  position: relative;
+}
+
+.overlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.servicio-nombre-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicio-nombre {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.arrow-container {
+  width: 16px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  translate: (-50%, 0);
+}
+
+.servicio-descripcion {
+  max-height: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.servicio-descripcion p {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* .servicios-tipos {
   height: auto;
   flex-wrap: wrap;
 }
 
-.servicio-tipo-sm {
-  width: 50%;
+.servicio-tipo-lg {
+  width: 100%;
   position: relative;
 }
 
-.servicio-tipo-lg {
+.servicio-tipo-xs {
+  width: 33%;
+  position: relative;
+}
+
+.servicio-tipo-sm {
+  width: 50%;
   position: relative;
 }
 
@@ -237,4 +325,4 @@ header {
 
 .italic {
   font-style: oblique;
-}
+} */
